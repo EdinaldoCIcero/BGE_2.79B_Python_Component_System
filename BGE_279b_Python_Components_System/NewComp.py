@@ -3,12 +3,8 @@ from collections import OrderedDict
 
 
 
-
-
 class ThirdPerson(bge.types.KX_PythonComponent):
-    """Basic third person controls"""
-
-
+  
     args = OrderedDict((
 
                         ("@Speeds_Values",""),
@@ -17,13 +13,15 @@ class ThirdPerson(bge.types.KX_PythonComponent):
                         ("Turn_Speed"           , 0.05),
                         
 
-                        ("@_Keyboards_Events",""),
+                        ("@Keyboards_Events",""),
 
                         ("Move_Front_Key"       , "w" ),
                         ("Move_Back_Key"        , "s" ),
                         ("Turn_Right_Key"       , "d"),
                         ("Turn_Left_key"        , "a"),
                         ))
+
+
 
 
     def keyboardDict(self):
